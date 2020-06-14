@@ -1,0 +1,25 @@
+@mixin component-title {
+	/*! Title */
+	.title {
+		&:after {
+			content: "";
+			display: block;
+			background-color: $primary;
+			height: rem(3);
+			margin: rem(20) auto;
+			width: rem(70);
+		}
+	}
+	.title--special {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-95px, -50%);
+		font-size: rem(100);
+		text-transform: uppercase;
+		width: rem(180);
+		opacity: 0.5;
+		text-align: center;
+		z-index: 1;
+	}
+}

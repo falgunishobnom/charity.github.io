@@ -1,0 +1,63 @@
+/*
+---
+name: Typography
+category:
+  - base
+  - base/typography
+tag:
+  - base
+
+compile: true
+fullDisplay: true
+---
+
+#### Typography
+Using the Heading tagname h1, h2, h3, etc...
+!![](./base/typography.html)
+
+#### Title
+!![](./base/title.html)
+
+#### Text
+Standard Body copy
+!![](./base/text.html)
+
+*/
+$h1-font-size: 60px;
+$h2-font-size: 50px;
+$h3-font-size: 30px;
+$p-lineheight: 1.6 !default;
+$p-margin-bottom: 1rem !default;
+$p-text-rendering: optimizeLegibility !default;
+
+@mixin base-typography {
+	/* Typography */
+	h1, h2, h3, h4, h5, h6, figure {
+		font-family: $heading-font;
+		font-weight: 400;
+		margin: 0 0 20px 0;
+	}
+	h1 {
+		font-size: $h1-font-size;
+	}
+	h2 {
+		font-size: $h2-font-size;
+	}
+	h3 {
+		font-size: $h3-font-size;
+	}
+	a {
+		@include transition(.5s);
+		&:hover, &:active, &:focus {
+			color: $primary;
+			outline: none;
+			text-decoration: none;
+		}
+	}
+	p {
+		font-size: inherit;
+		line-height: $p-lineheight;
+		margin-bottom: $p-margin-bottom;
+		text-rendering: $p-text-rendering;
+	}
+}

@@ -1,0 +1,86 @@
+/*
+---
+name: Navbar
+category:
+  - components
+  - components/nav
+tag:
+  - base
+
+compile: true
+fullDisplay: true
+---
+
+#### Navbar classic
+!![](./components/nav/nav-classic.html)
+
+#### Navbar Mega
+!![](./components/nav/nav-mega.html)
+
+#### Navbar with expand button
+!![](./components/nav/nav-mobile.html)
+
+#### Navbar with search form
+!![](./components/nav/nav-search.html)
+
+#### Navbar right
+!![](./components/nav/nav-right.html)
+
+#### Navbar with social
+!![](./components/nav/nav-social.html)
+
+#### Navbar center mode
+!![](./components/nav/nav-center.html)
+
+#### Navbar color schemes
+!![](./components/nav/nav-color.html)
+
+*/
+@mixin component-nav {
+	/*! Navbar */
+	.navbar-brand {
+		font-family: $heading-font;
+	}
+	.navbar-collapse.show {
+		max-height: 350px;
+		overflow-y: auto;
+	}
+	.navbar--center-mode {
+		.navbar-brand {
+			position: absolute;
+			width: 100%;
+			left: 0;
+			top: 0;
+			text-align: center;
+			margin: auto;
+		}
+		.navbar-toggle {
+			z-index:3;
+		}
+	}
+	.dropdown-menu {
+		padding: 0;
+		border-radius: 0;
+	}
+	.dropdown-item {
+		&:hover {
+			color: $primary;
+			background: $dark;
+		}
+	}
+	.dropdown-mega {
+		&.show {
+			position: static;
+		}
+		.dropdown-menu {
+			width: 100%;
+			margin: 0;
+			top: 50px;
+			left: 0;
+			right: 0;
+		}
+	}
+	.mega-menu__item {
+		border-bottom: 1px solid $primary;
+	}
+}

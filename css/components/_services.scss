@@ -1,0 +1,44 @@
+/*
+---
+name: Services
+category:
+  - components
+  - components/services
+tag:
+  - base
+
+compile: true
+fullDisplay: true
+---
+
+#### Services with top icons
+!![](./components/services/services.html)
+
+#### Services with top icons
+!![](./components/services/services-1.html)
+
+#### Services with left icons
+!![](./components/services/services-2.html)
+
+#### Services with left icons
+!![](./components/services/services-3.html)
+
+*/
+$service-icon-size: rem(20);
+
+@mixin component-services {
+	/*! Service */
+	.c-service--top {
+		@include breakpoint(medium) {
+			margin-top: rem(-60);
+		}
+
+		.card {
+			border: none;
+			border-right: 1px solid rgba($black,.125);
+			&:last-child {
+				border: none;
+			}
+		}
+	}
+}

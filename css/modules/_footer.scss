@@ -1,0 +1,38 @@
+/*
+---
+name: Footer
+category:
+    - module
+    - module/footer
+tag:
+    - base
+
+compile: true
+fullDisplay: true
+---
+
+#### Footer default
+!![](./modules/footer/footer.html)
+
+#### Footer 1
+!![](./modules/footer/footer-1.html)
+
+#### Footer 2
+!![](./modules/footer/footer-2.html)
+
+#### Footer 3
+!![](./modules/footer/footer-3.html)
+
+#### Footer 4
+!![](./modules/footer/footer-4.html)
+
+*/
+@mixin module-footer {
+	/*! Footer */
+	.m-footer__top {
+		margin-bottom: 30px;
+	}
+	.copyright {
+		padding-right: 20px;
+	}
+}

@@ -1,0 +1,31 @@
+/*
+---
+name: Testimonials
+category:
+  - components
+  - components/testimonials
+tag:
+  - js
+
+compile: true
+fullDisplay: true
+---
+
+#### Testimonials single
+!![](./components/testimonials/testimonials-1.html)
+
+#### Testimonials group
+!![](./components/testimonials/testimonials-group-1.html)
+
+#### Testimonials group secondary
+!![](./components/testimonials/testimonials-group-2.html)
+
+#### Testimonials slider
+!![](./components/testimonials/testimonials-slider-1.html)
+
+#### Testimonials slider group
+!![](./components/testimonials/testimonials-slider-group-1.html)
+
+*/
+@mixin component-testimonials {
+}

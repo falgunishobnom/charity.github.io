@@ -1,0 +1,128 @@
+/*
+---
+name: Hero banner
+category:
+  - components
+  - components/hero-banner
+tag:
+  - base
+compile: true
+fullDisplay: true
+---
+
+#### Hero banner
+!![](./components/hero-banner/hero-banner.html)
+
+#### Hero banner (text on the left)
+!![](./components/hero-banner/hero-banner-left.html)
+
+#### Hero banner (text on the right)
+!![](./components/hero-banner/hero-banner-right.html)
+
+#### Hero banner with video link
+!![](./components/hero-banner/hero-banner-video-link.html)
+
+#### Hero banner stacked all
+##### Image first
+!![](./components/hero-banner/hero-banner-stacked.html)
+
+#### Hero banner stacked all
+##### Text first
+!![](./components/hero-banner/hero-banner-stacked-text-first.html)
+
+#### Hero banner stacked on mobile and tablet
+!![](./components/hero-banner/hero-banner-stacked-small.html)
+
+#### Hero banner with color background
+!![](./components/hero-banner/hero-banner-color-bg.html)
+
+*/
+@mixin component-hero-banner {
+	/*! Hero banner */
+	.cover {
+		height: 100vh;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+		width: 100%;
+		.c-hero-banner {
+			height: 100%;
+		}
+	}
+	.c-hero-banner {
+		position: relative;
+		.jumbotron {
+			@include absolute-center;
+			max-width: 100%;
+			text-align: center;
+			text-decoration: none;
+			margin-bottom: 0;
+			background: none;
+
+			@include breakpoint(xsmall) {
+				max-width: 50%;
+			}
+		}
+	}
+	.c-hero-banner__image {
+		max-height: 640px;
+		overflow: hidden;
+	}
+
+	.jumbotron {
+		.c-hero-banner--text-left & {
+			left: 5%;
+			text-align: left;
+			transform: translateY(-50%);
+			@include breakpoint(xsmall) {
+				left: 15%;
+			}
+		}
+		.c-hero-banner--text-right & {
+			left: inherit;
+			right: 5%;
+			text-align: right;
+			transform: translateY(-50%);
+			@include breakpoint(xsmall) {
+				right: 15%;
+			}
+		}
+		.c-hero-banner--bg & {
+			top: inherit;
+			transform: translateX(-50%);
+			position: relative;
+		}
+	}
+
+	.c-hero-banner--stacked-all {
+		.jumbotron {
+			position: relative;
+			max-width: none;
+			transform: none;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	.c-hero-banner--stacked-small {
+		@include breakpoint(medium-down) {
+			.jumbotron {
+				position: relative;
+				max-width: none;
+				transform: none;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+
+	.c-hero-banner--bg {
+		padding: rem(75 0);
+	}
+
+	.c-hero-banner--small {
+		max-height: 50vh;
+		overflow: hidden;
+	}
+}

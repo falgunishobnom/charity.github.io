@@ -1,0 +1,45 @@
+/*
+---
+name: List
+category:
+  - components
+  - components/list
+tag:
+  - base
+
+compile: true
+fullDisplay: true
+---
+
+#### List default
+!![](./components/list/list.html)
+
+#### List with bullets
+!![](./components/list/list-bullets.html)
+
+#### Horizontal list
+##### Can be done with text, links or icons items.
+!![](./components/list/list-horizontal.html)
+
+*/
+$list-icon-fs: rem(25);
+
+@mixin component-list {
+	/*! List */
+	.c-list--bullets {
+		list-style-type: disc;
+		margin-left: 20px;
+	}
+	.c-list--horizontal {
+		.c-list__item {
+			display: inline-block;
+			margin-right: 10px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		.fa {
+			font-size: $list-icon-fs;
+		}
+	}
+}

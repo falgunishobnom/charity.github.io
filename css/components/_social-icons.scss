@@ -1,0 +1,19 @@
+@mixin component-social-icons {
+	/*! Social icons */
+	.social-icons {
+		margin: 0;
+		padding: 0;
+		li {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			@include inline-block;
+			a {
+				color: $primary;
+				i {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}

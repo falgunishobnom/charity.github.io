@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Charity</title>
+		<meta charset=utf-8>
+		<meta name=description content="">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<!-- Styles -->
+		<link rel="stylesheet" type="text/css" href="css/vendor/slick.css">
+		<link rel="stylesheet" type="text/css" href="css/vendor/slick-theme.css">
+		<link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/vendor/lightbox.min.css">
+		<!-- Main style -->
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<!-- Fonts -->
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="js/vendor/html5shiv.min.js"></script>
+			<script src="js/vendor/respond.min.js"></script>
+		<![endif]-->
+	</head>
+<body data-spy="scroll" data-target="#navbar">
+	<!-- Navigation -->
+	<nav id="navbar" class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand text-primary" href="index.html">Charity <span class="text-white">.</span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link page-scroll" href="index.html">Home Page</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-page" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Blog
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown-page">
+							<a class="dropdown-item" href="blog.html">Category page</a>
+							<a class="dropdown-item" href="blog-single.html">Single post</a>
+							<a class="dropdown-item" href="news.html">News page</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link page-scroll" href="#cases">Cases</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link page-scroll" href="#donations">Donations</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link page-scroll" href="#news">News</a>
+					</li>
+					<li class="nav-item dropdown dropdown-mega">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-mega" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Mega menu
+						</a>
+						<div class="dropdown-menu bg-dark mb-4 py-4" aria-labelledby="navbarDropdown-mega">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="mega-menu__item mb-4">
+											<span class="text-uppercase text-primary">Home page</span>
+											<ul class="nav flex-column mb-3">
+												<li class="nav-item">
+													<a class="nav-link" href="index.html">Home 1</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="index-2.html">Home 2</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="index-3.html">Home 3</a>
+												</li>
+											</ul>
+										</div>
+										<div>
+											<span class="text-uppercase text-primary">Services</span>
+											<ul class="nav flex-column">
+												<li class="nav-item">
+													<a class="nav-link" href="service-1.html">Service 1</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="service-2.html">Service 2</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="service-3.html">Service 3</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="service-4.html">Service 4</a>
+												</li>
+											</ul>
+										</div>
+									</div><!-- /.col-md-3  -->
+									<div class="col-md-3">
+										<div class="mb-4 pb-3">
+											<span class="text-uppercase text-primary">Pages</span>
+											<ul class="nav flex-column">
+												<li class="nav-item">
+													<a class="nav-link" href="about.html">About</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="donation.html">Donations</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="gallery.html">Gallery</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="projects.html">Projects</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="project-single.html">Project Single</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="events.html">Events</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="news.html">News</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="contacts.html">Contacts</a>
+												</li>
+											</ul>
+										</div>
+									</div><!-- /.col-md-3  -->
+									<div class="col-md-3">
+										<div class="mega-menu__item mb-4 pb-3">
+											<span class="text-uppercase text-primary">Cases</span>
+											<ul class="nav flex-column">
+												<li class="nav-item">
+													<a class="nav-link" href="case-1.html">Case 1</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="case-2.html">Case 2</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="case-3.html">Case 3</a>
+												</li>
+											</ul>
+										</div>
+										<div class="mega-menu__item mb-4 pb-3">
+											<span class="text-uppercase text-primary">Testimonials</span>
+											<ul class="nav flex-column">
+												<li class="nav-item">
+													<a class="nav-link" href="tm-1.html">Testimonials 1</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="tm-2.html">Testimonials 2</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="tm-3.html">Testimonials 3</a>
+												</li>
+											</ul>
+										</div>
+									</div><!-- /.col-md-3  -->
+									<div class="col-md-3">
+										<span class="text-uppercase text-primary">Carousel</span>
+										<div id="carouselExampleSlidesOnly" class="carousel slide my-3" data-ride="carousel" data-interval="2000">
+											<ol class="carousel-indicators">
+												<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+											</ol>
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img class="d-block w-100" src="img/card2.jpg" alt="First slide">
+												</div>
+												<div class="carousel-item">
+													<img class="d-block w-100" src="img/card3.jpg" alt="Second slide">
+												</div>
+												<div class="carousel-item">
+													<img class="d-block w-100" src="img/card4.jpg" alt="Third slide">
+												</div>
+											</div>
+										</div>
+										<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua</p>
+										<a href="#" class="btn btn-primary">Donate</a>
+									</div><!-- /.col-md-3  -->
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item ml-lg-4">
+						<a class="btn btn-primary" href="#">Donate</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Main section -->
+	<section id="top" class="main-hero pb-5">
+		<div class="c-hero-banner c-hero-banner--text-left mb-5 mb-lg-0">
+			<div class="c-hero-banner__section c-hero-banner__image">
+				<img class="lazyload" src="img/1600.jpg" alt="image" />
+			</div>
+			<div class="jumbotron p-0 text-light">
+				<h1 class="display-4">Help children</h1>
+				<p class="lead d-none d-md-block">Join to our program and start to help children today.</p>
+				<p class="lead">
+					<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+				</p>
+			</div>
+		</div>
+		<div class="c-service">
+			<div class="container">
+				<div class="card-group c-service c-service--top">
+					<div class="card d-flex flex-row bg-primary pl-3">
+						<i class="fa fa-usd fa-2x pt-4"></i>
+						<div class="card-body">
+							<h4 class="card-title">Make donation</h4>
+							<p class="card-text d-none d-md-block">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						</div>
+					</div>
+					<div class="card d-flex flex-row bg-primary pl-3">
+						<i class="fa fa-users fa-2x pt-4"></i>
+						<div class="card-body">
+							<h4 class="card-title">Become a volunteer</h4>
+							<p class="card-text d-none d-md-block">This card has supporting text below as a natural lead-in to additional content.</p>
+						</div>
+					</div>
+					<div class="card d-flex flex-row bg-primary pl-3">
+						<i class="fa fa-globe fa-2x pt-4"></i>
+						<div class="card-body">
+							<h4 class="card-title">Join us</h4>
+							<p class="card-text d-none d-md-block">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Popular cases -->
+	<section id="cases" class="pt-5 pb-5">
+		<div class="container">
+			<div class="col-sm-8 offset-sm-2 text-center mb-5">
+				<h2 class="title">Popular cases</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco</p>
+			</div>
+			<div class="card-deck mb-5">
+				<div class="card">
+					<a href="project-single.html"><img class="card-img" src="img/case1.jpg" alt="Card image cap"></a>
+					<div class="card-body">
+						<div class="progress mb-3">
+							<div class="bg--primary progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<h4 class="card-title"><a href="project-single.html" class="text-dark">Clean water for children</a></h4>
+						<h6 class="card-subtitle mb-2 text-muted"><i class="fa fa-calendar pr-2"></i>7 days remainig</h6>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<div class="row">
+							<div class="col">
+								<p class="m-0">Raised</p>
+								<h3>1200</h3>
+							</div>
+							<div class="col text-right">
+								<p class="m-0">Goal</p>
+								<h3>4800</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<a href="project-single.html"><img class="card-img" src="img/case2.jpg" alt="Card image cap"></a>
+					<div class="card-body">
+						<div class="progress mb-3">
+							<div class="bg--primary progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<h4 class="card-title"><a href="project-single.html" class="text-dark">Good education</a></h4>
+						<h6 class="card-subtitle mb-2 text-muted"><i class="fa fa-calendar pr-2"></i>3 days remainig</h6>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<div class="row">
+							<div class="col">
+								<p class="m-0">Raised</p>
+								<h3>2500</h3>
+							</div>
+							<div class="col text-right">
+								<p class="m-0">Goal</p>
+								<h3>2800</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<a href="project-single.html"><img class="card-img" src="img/case3.jpg" alt="Card image cap"></a>
+					<div class="card-body">
+						<div class="progress mb-3">
+							<div class="bg--primary progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<h4 class="card-title"><a href="project-single.html" class="text-dark">New books for children</a></h4>
+						<h6 class="card-subtitle mb-2 text-muted"><i class="fa fa-calendar pr-2"></i>5 days remainig</h6>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<div class="row">
+							<div class="col">
+								<p class="m-0">Raised</p>
+								<h3>1000</h3>
+							</div>
+							<div class="col text-right">
+								<p class="m-0">Goal</p>
+								<h3>1800</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-center">
+				<a href="projects.html" class="btn btn-primary btn-lg">All cases</a>
+			</div>
+		</div>
+	</section>
+	<!-- Latest donation -->
+	<section id="donations" class="pt-5 pb-5">
+		<div class="container">
+			<div class="col-sm-8 offset-sm-2 text-center mb-5">
+				<h2 class="title">Latest donation</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco</p>
+			</div>
+			<div class="card-deck">
+				<div class="card border-0">
+					<img class="rounded-circle m-auto" src="img/person1.jpg" alt="Card image cap">
+					<div class="card-body text-center">
+						<h4 class="card-title">John Doe</h4>
+						<h6 class="card-subtitle mb-2 text-muted">donated</h6>
+						<h3>$1500</h3>
+					</div>
+				</div>
+				<div class="card border-0">
+					<img class="rounded-circle m-auto" src="img/person2.jpg" alt="Card image cap">
+					<div class="card-body text-center">
+						<h4 class="card-title">Martin Smith</h4>
+						<h6 class="card-subtitle mb-2 text-muted">donated</h6>
+						<h3>$1500</h3>
+					</div>
+				</div>
+				<div class="card border-0">
+					<img class="rounded-circle m-auto" src="img/person3.jpg" alt="Card image cap">
+					<div class="card-body text-center">
+						<h4 class="card-title">Matt Green</h4>
+						<h6 class="card-subtitle mb-2 text-muted">donated</h6>
+						<h3>$1500</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Testimonials -->
+	<section class="pt-5 pb-5">
+		<div class="container">
+			<div class="col-sm-8 offset-sm-2 text-center mb-5">
+				<h2 class="title">What people say</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco</p>
+			</div>
+			<div class="slick-slider" data-slick='{"arrows":true, "autoplay":false, "autoplaySpeed":5000, "slidesToShow":1, "dots":true}'>
+				<div class="card border-0 text-center">
+					<img class="rounded-circle m-auto" src="img/person4.jpg" alt="Card image cap">
+					<div class="card-body">
+						<blockquote class="blockquote mb-0">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+							<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+						</blockquote>
+					</div>
+				</div>
+				<div class="card border-0 text-center">
+					<img class="rounded-circle m-auto" src="img/person5.jpg" alt="Card image cap">
+					<div class="card-body">
+						<blockquote class="blockquote mb-0">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+							<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+						</blockquote>
+					</div>
+				</div>
+				<div class="card border-0 text-center">
+					<img class="rounded-circle m-auto" src="img/person6.jpg" alt="Card image cap">
+					<div class="card-body">
+						<blockquote class="blockquote mb-0">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+							<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Special -->
+	<section class="pt-5 pb-5">
+		<div class="card card--special bg-dark d-md-flex flex-md-row border-0 text-white">
+			<h3 class="title--special d-none d-md-block">Believe</h3>
+			<div class="card-img col-md p-0">
+				<img src="img/success.jpg" alt="Card image cap">
+			</div>
+			<div class="col-md">
+				<div class="card-body p-5 align-self-center">
+					<h2 class="card-title">Success story</h2>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a href="#" class="btn btn-primary btn-lg">Read more</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Latest news -->
+	<section id="news" class="pt-5 pb-5">
+		<div class="container">
+			<div class="col-sm-8 offset-sm-2 text-center mb-5">
+				<h2 class="title">The latest news</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco</p>
+			</div>
+			<div class="card-columns">
+				<div class="card">
+					<a href="blog-single.html"><img class="card-img" src="img/card1.jpg" alt="Card image cap"></a>
+					<div class="card-body">
+						<h6 class="card-subtitle text-wide mb-2">Category</h6>
+						<h4 class="card-title">Card title that wraps to a new line</h4>
+					</div>
+				</div>
+				<div class="card p-3">
+					<blockquote class="blockquote mb-0 card-body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+						<footer class="blockquote-footer">
+							<small class="text-muted">
+								Someone famous in <cite title="Source Title">Source Title</cite>
+							</small>
+						</footer>
+					</blockquote>
+				</div>
+				<div class="card">
+					<a href="blog-single.html"><img class="card-img" src="img/card2.jpg" alt="Card image cap"></a>
+					<div class="card-body">
+						<h6 class="card-subtitle text-wide mb-2">Category</h6>
+						<h4 class="card-title">Card title</h4>
+						<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+					</div>
+				</div>
+				<div class="card bg--primary text-center p-3">
+					<blockquote class="blockquote mb-0">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+						<footer class="blockquote-footer">
+							<small>
+								Someone famous in <cite title="Source Title">Source Title</cite>
+							</small>
+						</footer>
+					</blockquote>
+				</div>
+				<div class="card text-center">
+					<a href="blog-single.html"><img class="card-img" src="img/card3.jpg" alt="Card image"></a>
+					<div class="card-body">
+						<h6 class="card-subtitle text-wide mb-2">Category</h6>
+						<h4 class="card-title">Card title</h4>
+						<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+					</div>
+				</div>
+				<div class="card">
+					<a href="blog-single.html"><img class="card-img" src="img/card4.jpg" alt="Card image"></a>
+				</div>
+				<div class="card p-3 text-right">
+					<blockquote class="blockquote mb-0">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+						<footer class="blockquote-footer">
+							<small class="text-muted">
+								Someone famous in <cite title="Source Title">Source Title</cite>
+							</small>
+						</footer>
+					</blockquote>
+				</div>
+				<div class="card">
+					<a href="blog-single.html"><img class="card-img" src="img/card5.jpg" alt="Card image"></a>
+					<div class="card-body">
+						<h6 class="card-subtitle text-wide mb-2">Category</h6>
+						<h4 class="card-title">Card title</h4>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Counters -->
+	<section id="counter" class="pt-5 pb-5 bg-dark text-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="card border-0">
+						<div class="card-body text-center">
+							<i class="fa fa-usd fa-2x"></i>
+							<h2 class="card-title js-counter" data-from="0" data-to="1200" data-speed="2000" data-refresh-interval="50">0</h2>
+							<p class="card-text">Donators</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="card border-0">
+						<div class="card-body text-center">
+							<i class="fa fa-thumbs-o-up fa-2x"></i>
+							<h2 class="card-title js-counter" data-from="0" data-to="150" data-speed="2000" data-refresh-interval="50">1</h2>
+							<p class="card-text">Projects</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="card border-0">
+						<div class="card-body text-center">
+							<i class="fa fa-users fa-2x"></i>
+							<h2 class="card-title js-counter" data-from="0" data-to="500" data-speed="2000" data-refresh-interval="50">1</h2>
+							<p class="card-text">Volunteers</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="card border-0">
+						<div class="card-body text-center">
+							<i class="fa fa-globe fa-2x"></i>
+							<h2 class="card-title js-counter" data-from="0" data-to="100" data-speed="2000" data-refresh-interval="50">1</h2>
+							<p class="card-text">Countries</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- Footer cards -->
+	<section class="pt-5 pb-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<h3>News</h3>
+					<div class="card border-0">
+						<div class="card-body">
+							<h4 class="card-title">Card title</h4>
+							<h6 class="card-subtitle mb-2 text-muted">JULY 16, 2017</h6>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="blog-single.html" class="card-link color--primary">Read more</a>
+						</div>
+					</div>
+					<div class="card border-0 border-0">
+						<div class="card-body">
+							<h4 class="card-title">Card title</h4>
+							<h6 class="card-subtitle mb-2 text-muted">JULY 16, 2017</h6>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="blog-single.html" class="card-link color--primary">Read more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h3>About us</h3>
+					<div class="card border-0">
+						<img class="card-img" src="img/about.jpg" alt="Card image cap">
+						<div class="card-body">
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="about.html" class="btn btn-primary">Learn more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<h3>Our gallery</h3>
+					<div class="slick-slider" data-slick='{"arrows": false, "autoplay": true}'>
+						<div class="card m-0">
+							<img class="" src="img/card5.jpg" alt="Card image cap">
+						</div>
+						<div class="card m-0">
+							<img class="" src="img/card2.jpg" alt="Card image cap">
+						</div>
+						<div class="card m-0">
+							<img class="" src="img/card3.jpg" alt="Card image cap">
+						</div>
+						<div class="card m-0">
+							<img class="" src="img/card4.jpg" alt="Card image cap">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Sign up -->
+	<section class="pt-5 pb-5 bg-dark text-white">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-8">
+					<h2>Sing up for newsletters</h2>
+					<p>Submit your email and stay in touch by notify our news & update regularly</p>
+				</div>
+				<div class="col-md-4">
+					<div class="input-group">
+						<input type="text" class="form-control form-control-lg" placeholder="Enter email" aria-label="Email">
+						<span class="input-group-btn">
+							<button class="btn btn-primary text-dark" type="button">Enter</button>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer -->
+	<section class="pt-5 pb-3 bg-secondary text-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h3>About us</h3>
+					<div class="card border-0 mb-3">
+						<div class="card-body p-0">
+							This is some text within a card body.
+						</div>
+					</div>
+					<ul class="c-list c-list--horizontal social-icons">
+						<li class="c-list__item"><a href="" class="fa fa-facebook-official"></a></li>
+						<li class="c-list__item"><a href="" class="fa fa-twitter-square"></a></li>
+						<li class="c-list__item"><a href="" class="fa fa-pinterest-square"></a></li>
+						<li class="c-list__item"><a href="" class="fa fa-snapchat-square"></a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h3>Contacts</h3>
+					<ul class="probootstrap-contact-info">
+						<li><i class="icon-location2"></i> <span>198 West 21th Street, Suite 721 New York NY 10016</span></li>
+						<li><i class="icon-mail"></i><span>info@domain.com</span></li>
+						<li><i class="icon-phone2"></i><span>+123 456 7890</span></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h3>Donation</h3>
+					<div class="card border-0 mb-3">
+						<div class="card-body p-0">
+							<p class="card-text">This is some text within a card body.</p>
+							<a href="" class="btn btn-primary text-dark">Make a donation</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="m-footer mt-5">
+			<div class="container text-center">
+				<div class="copyright">© 2018 Raghib Noor</div>
+			</div><!-- /.container -->
+		</div>
+	</section>
+	<script src="js/vendor/jquery.min.js"></script>
+	<script src="js/vendor/jquery.easing.1.3.js"></script>
+	<script src="js/vendor/popper.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/vendor/slick.min.js"></script>
+	<script src="js/vendor/jquery.countTo.js"></script>
+	<script src="js/vendor/jquery.waypoints.min.js"></script>
+	<script src="js/vendor/parallax.min.js"></script>
+	<script src="js/vendor/lightbox.min.js"></script>
+	<script src="js/main.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy5UIDf69FOPfLRZvYQ8KGmE-AINyKHPU&callback=initMap">
+	</script>
+</body>
+</html>
